@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{url_for('static',filename='dojos.css')}}">
+    <meta charset="utf-8">
+    <title>
+    </title>
+  </head>
+  <body>
+    <h1>A Contact form</h1>
+    <form class="form1" action="##" method="post">
+      <p>First Name:<input type="text" name="fname" value=" "placeholder="first name"></p>
+      <p>Last Name:<input type="text" name="lname" value=" "placeholder="last name"></p>
+      <p>Gender:<input type="radio" name="gender" value="Male">
+      <input type="radio" name="gender" value="Female"></p>
+      <p>Contact:<input type="number" name="contact" value=""></p>
+      <p>Address:<textarea name="address" rows="8" cols="80"></textarea></p>
+      <button type="submit" name="submit">Submit</button>
+    </form>
+  </body>
+</html>

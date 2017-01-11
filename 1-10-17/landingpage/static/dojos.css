@@ -1,0 +1,11 @@
+h1{
+  text-align: center;
+  text-decoration: underline;
+  color: orangered;
+  font-family: monospace;
+}
+p{
+  font-family:cursive;
+  color: blue;
+  font-size: 20px;
+}
