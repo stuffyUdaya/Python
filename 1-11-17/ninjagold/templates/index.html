@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet"href="{{url_for('static',filename='master.css')}}">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+      <h3>Your Gold:<span id ="gold">{{session['gold']}}
+      </span>
+    </h3>
+    <div id = "docks">
+    <div id="farm">
+      <h2>Farm</h2>
+      <p>(earns 10-20 golds)</p>
+      <form action="/process_money" method="post">
+        <input type="hidden" name="building" value="farm" />
+        <input type="submit"value="Find Gold!">
+
+      </form>
+    </div>
+      <div id="cave">
+        <h2>Cave</h2>
+        <p>(earns 5-10 golds)</p>
+        <form action="/process_money" method="post">
+          <input type="hidden" name="building" value="cave" />
+          <input type="submit"value="Find Gold!">
+
+        </form>
+      </div>
+        <div id="house">
+          <h2>House</h2>
+          <p>(earns 2-5 golds)</p>
+          <form action="/process_money" method="post">
+            <input type="hidden" name="building" value="house" />
+            <input type="submit" name="house" value="Find Gold!">
+
+          </form>
+        </div>
+          <div id="casino">
+            <h2>Casino</h2>
+            <p>(earns/takes 0-50 golds)</p>
+            <form action="/process_money" method="post">
+              <input type="hidden" name="building" value="casino" />
+              <input type="submit" name="casino" value="Find Gold!">
+
+            </form>
+    </div>
+  </div>
+  <h4>Actvities:</h4>
+  {%for activity in session['farmactivities']%}
+    <p>earned {{activity}}golds from the farm</p>
+  {%endfor%}
+  <p>{{session['farmnowactivities']}}</p>
+  {%for activity in session['caveactivities']%}
+    <p>earned {{activity}}golds from the cave</p>
+  {%endfor%}
+  {%for activity in session['houseactivities']%}
+    <p>earned {{activity}}golds from the house</p>
+  {%endfor%}
+  {%for activity in session['casinoactivities']%}
+    <p>earned {{activity}}golds from the casino</p>
+  {%endfor%}
+
+
+
+  </div>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{url_for('static',filename='highlow.css')}}">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to the Great Number Game!</h1>
+    <h4>I am thinking a number between 1 and 100</h4>
+    <h4>Take a Guess</h4>
+    <div class="high">
+        <h3>{{y}}</h3>
+    </div>
+
+    <form action="/process" method="post">
+
+
+    <input type="number" name="guess"><br>
+    <input type="submit" name="submit" value="submit">
+  </form>
+  </body>
+</html>

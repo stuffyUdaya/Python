@@ -1,0 +1,79 @@
+body{
+  background-color: aliceblue;
+  width:900;
+}
+h3{
+  text-align: center;
+  color:#bd7811;
+}
+#gold{
+ width:50px;
+ height:20px;
+ border: 1px solid black;
+ color:red;
+}
+#docks{
+  position: relative;
+  left:240px;
+}
+#farm{
+  width: 150px;
+    height: 150px;
+    border-color: 5px black;
+    border: 5px black;
+    position: relative;
+    left: 30px;
+    top: 30px;
+    background-color: yellowgreen;
+    padding: 15px;
+    margin: 10px;
+}
+h2{
+  text-align: center;
+}
+p{
+  text-align: center;
+}
+input{
+  position: relative;
+  left:35px;
+}
+#cave{
+  width: 150px;
+    height: 150px;
+    border-color: 5px black;
+    border: 5px black;
+    position: relative;
+    left: 240px;
+    top: -160px;
+
+    background-color: yellowgreen;
+    padding: 15px;
+    margin: 10px;
+}
+#house{
+  width: 150px;
+    height: 150px;
+    border-color: 5px black;
+    border: 5px black;
+    position: relative;
+    left: 460px;
+    top: -350px;
+
+    background-color: yellowgreen;
+    padding: 15px;
+    margin: 10px;
+}
+#casino{
+  width: 150px;
+    height: 150px;
+    border-color: 5px black;
+    border: 5px black;
+    position: relative;
+    left: 670px;
+    top: -540px;
+
+    background-color: yellowgreen;
+    padding: 15px;
+    margin: 10px;
+}

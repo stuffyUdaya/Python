@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {%if ninja_color=="blue"%}
+    <img src="{{ url_for('static',filename='img/leonardo.jpg') }}">
+    {%elif ninja_color=="orange"%}
+    <img src="{{ url_for('static',filename='img/michelangelo.jpg') }}">
+
+    {%elif ninja_color=="red"%}
+    <img src="{{ url_for('static',filename='img/raphael.jpg') }}">
+
+    {%elif ninja_color=="purple"%}
+    <img src="{{ url_for('static',filename='img/donatello.jpg') }}">
+    {%elif ninja_color%}
+    <p>Megan Fox who was April O'Neil in the most recent ninja turtles movie.</p>
+
+    {%endif%}
+
+    <p>{{x}}</p>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{{url_for('static',filename='equal.css')}}">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to the Great Number Game!</h1>
+    <h4>I am thinking a number between 1 and 100</h4>
+    <h4>Take a Guess</h4>
+    <div class="success">
+      <h2>{{session['x']}} was the number</h2>
+        <form action="/" method="post">
+          <input type="submit" name="playagain" value="playagain">
+
+        </form>
+    </div>
+
+  </body>
+</html>

@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="{{url_for('static',filename='counter.css')}}">
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-    <form action="/" method="post">
+    <form action="/one" method="post">
 
 
     <h1>Counter</h1>
-    <h6>{{session['x']}}</h6>
+    <h3>{{session['x']}},times</h3>
+    <input type="submit" name="submit" value="two">
+    <input type="submit" name="submit" value="reset">
+
     </form>
+
+
   </body>
 </html>

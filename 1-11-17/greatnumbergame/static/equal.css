@@ -1,0 +1,25 @@
+h1{
+  text-align: center;
+  color: blue;
+  font-family: cursive;
+}
+h4{
+      text-align: center;
+    color: blue;
+    font-family: cursive;
+
+}
+.success{
+  position: relative;
+  height: 250px;
+    left: 900px;
+    width: 250px;
+      background-color: green;
+}
+h2{
+  text-align: center;
+  color: whitesmoke;
+}
+input{
+  text-align: center;
+}
